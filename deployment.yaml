@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: spring-boot-app
-        image: your-dockerhub-username/spring-boot-app:1.0
+        image: preetz1303/spring-boot-app:1.0
         ports:
         - containerPort: 8080
