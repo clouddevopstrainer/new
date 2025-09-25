@@ -5,11 +5,11 @@ metadata:
   labels:
     app: spring-boot-app
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: spring-boot-app
   ports:
     - protocol: TCP
-      port: 80          # external port
-      targetPort: 80  # pod port
-      nodePort: 30002   # allows browser access via EC2 public IP
+      port: 80           # Internal service port
+      targetPort: 8080   # Pod port (Spring Boot)
+      nodePort: 30002    # External port on EC2 host
