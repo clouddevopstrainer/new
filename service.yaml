@@ -10,5 +10,6 @@ spec:
     app: spring-boot-app
   ports:
     - protocol: TCP
-      port: 80        # External port
-      targetPort: 8080  # Pod port
+      port: 80          # external port
+      targetPort: 8080  # pod port
+      nodePort: 30002   # allows browser access via EC2 public IP
