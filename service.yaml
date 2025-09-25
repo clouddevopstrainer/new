@@ -11,5 +11,5 @@ spec:
   ports:
     - protocol: TCP
       port: 80          # external port
-      targetPort: 8080  # pod port
+      targetPort: 80  # pod port
       nodePort: 30002   # allows browser access via EC2 public IP
